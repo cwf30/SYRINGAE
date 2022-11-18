@@ -1,0 +1,22 @@
+#PBS -A open
+
+#PBS -l nodes=1:ppn=20
+
+#PBS -l walltime=48:00:00
+
+#PBS -l feature=rhel7
+
+#PBS -l pmem=8gb
+
+#PBS -j oe
+
+cd /gpfs/group/efc5279/default/chad/
+
+module load anaconda3
+source activate gtdbtk-1.5.0
+
+cut -d_ -f1-2 GTDBTK_ALIGN_OUT/gtdbtk.bac120.user_msa.fasta > bac120_msa_trimmedHeader.fasta
+
+FastTree -gamma bac120_msa_trimmedHeader.fasta > HIGH_QUALITY_TREE 
+
+conda deactivate

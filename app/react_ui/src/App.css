@@ -1,0 +1,208 @@
+.app {
+  font-family: 'Merriweather', serif;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.maintitle {
+  font-size: 1.2rem;
+  font-family: 'Merriweather';
+  color: rgb(68, 48, 9);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1rem;
+  font-family: 'Merriweather';
+  color: #779f2d;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.subheading {
+  font-size: 0.9rem !important;
+}
+.text {
+  font-size: 0.8rem !important;
+}
+
+.menu_text {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: rgb(155, 143, 131);
+  display: inline-block;
+}
+
+.menu_text:hover {
+  color: rgb(68, 48, 9);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu_text:active {
+  color: rgb(133, 174, 51);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu_text_selected {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(68, 48, 9);
+  display: inline-block;
+}
+
+.menu_text_selected:hover {
+  cursor: pointer;
+}
+
+.corner_logo:hover {
+  cursor: pointer;
+}
+
+.home_menu_text {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(68, 48, 9);
+  display: inline-block;
+}
+.home_menu_text:hover {
+  font-size: 0.8rem;
+  color: #779f2d;
+  cursor: pointer;
+}
+
+.ui.button.search {
+  background-color: transparent !important;
+  font-family: 'Merriweather' !important;
+  color: #779f2d !important;
+  display: flex;
+  justify-content: center;
+}
+
+.ui.button.search:hover {
+  color: rgb(68, 48, 9) !important;
+}
+
+.ui.button.explore {
+  background-color: #779f2d !important;
+  font-family: 'Merriweather' !important;
+  font-size: 0.85rem;
+  color: white !important;
+}
+
+.ui.button.explore:hover {
+  background-color: rgb(68, 48, 9) !important;
+  color: white !important;
+}
+
+.ui.button.explore:active {
+  background-color: #779f2d !important;
+  color: white !important;
+}
+
+.ui.button.identify {
+  background-color: #779f2d !important;
+  font-family: 'Merriweather' !important;
+  font-size: 0.85rem;
+  color: white !important;
+}
+
+.ui.button.identify:hover {
+  background-color: rgb(68, 48, 9) !important;
+  color: white !important;
+}
+
+.ui.button.identify:active {
+  background-color: rgb(88, 132, 2) !important;
+  color: white !important;
+}
+
+.ui.button.LINselected {
+  font-family: 'Merriweather' !important;
+  background-color: rgb(68, 48, 9) !important;
+  color: white !important;
+}
+.ui.button.LINbrowserlabel {
+  font-family: 'Merriweather' !important;
+  background-color: #779f2d !important;
+  color: white !important;
+}
+
+.LINcontainer {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  text-align: center !important;
+  min-height: 65vh !important;
+}
+.wiki-searchBar {
+  display: flex;
+  justify-content: left;
+  text-align: left !important;
+  max-width: 40%;
+}
+
+.wiki-title {
+  font-size: 1.2rem;
+  font-family: 'Merriweather';
+  color: rgb(0, 0, 0);
+  margin: 1.6rem;
+  text-align: left;
+}
+
+.gene {
+  color: #779f2d !important;
+}
+
+.isolate {
+  color: rgb(68, 48, 9) !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row; 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75rem;
+  padding:10px;
+}
+
+.VFOCtooltip {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 0.05rem;
+  border-style: solid;
+  border-color: #779f2d;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.8rem;
+  font-family: 'Merriweather';
+  color: rgb(68, 48, 9);
+}
+
+
+.inputID {
+  color: #ff0000;
+  opacity: 1;
+}

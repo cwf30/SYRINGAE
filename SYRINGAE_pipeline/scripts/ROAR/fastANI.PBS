@@ -1,0 +1,33 @@
+#PBS -A efc5279_d_g_sc_default
+
+#PBS -l nodes=1:ppn=20
+
+#PBS -l walltime=150:00:00
+
+#PBS -l feature=rhel7
+
+#PBS -l pmem=6gb
+
+#PBS -j oe
+
+cd /storage/home/cwf30/work
+ 
+module load anaconda3
+source activate fastANI
+
+echo “ “
+QNUM=1
+total=$(sed -n '$=' PSSCnames.txt)
+while [ "$QNUM" -lt 10000 ]
+do 
+if [ ! -f /gpfs/group/efc5279/default/chad/fastANI/PSSC_"$QNUM" ]
+then 
+    query=$(sed ''$QNUM'q;d' PSSCnames.txt | tr -d '\n')
+    sed -n ''$((QNUM+1))',$p' PSSCnames.txt > referencegenomes.txt
+    fastANI -q $query --rl referencegenomes.txt -t 20 -o /gpfs/group/efc5279/default/chad/fastANI/PSSC_"$QNUM"
+fi
+((QNUM=QNUM+1))
+done
+echo “ “
+
+source deactivate

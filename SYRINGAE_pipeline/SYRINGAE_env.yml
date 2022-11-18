@@ -1,0 +1,15 @@
+name: SYRINGAE
+channels:
+  - bioconda
+  - defaults
+  - conda-forge
+dependencies:
+  - pandas
+  - biopython
+  - hmmer
+  - prodigal
+  - blast
+  - python=3.6
+  - gtdbtk
+  - gsl
+prefix: /storage/home/cwf30/.conda/envs/SYRINGAE

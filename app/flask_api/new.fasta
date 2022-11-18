@@ -1,0 +1,14 @@
+>seq_a
+gtc
+>seq_b
+cgtc
+
+>MAFFT.PY can be used to align sequences. --add was added, and might be worthy of pull request.
+>usage in flask file: 
+> from MAFFT import MafftCommandline
+> mafft_cline = MafftCommandline(input="./aligned.fasta", add="./new.fasta")
+> import io
+> from Bio import AlignIO
+> stdout, stderr = mafft_cline()
+> align = AlignIO.read(io.StringIO(stdout), "fasta")
+> print(align) ... align is a io.Align.MultipleSeqAlignment object. TODO: use alignment to build dist matrix, return.

@@ -1,0 +1,21 @@
+#PBS -A open
+
+#PBS -l nodes=1:ppn=20
+
+#PBS -l walltime=48:00:00
+
+#PBS -l feature=rhel7
+
+#PBS -l pmem=8gb
+
+#PBS -j oe
+
+cd /gpfs/group/efc5279/default/chad/
+
+module load anaconda3
+source activate gtdbtk-1.5.0
+
+gtdbtk identify --genome_dir /gpfs/group/efc5279/default/chad/HIGH_QUALITY_GENOMES_11-12-2021 --out_dir GTDBTK_ID_OUT
+gtdbtk align --identify_dir GTDBTK_ID_OUT --out_dir GTDBTK_ALIGN_OUT
+
+conda deactivate
